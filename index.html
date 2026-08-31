@@ -1,125 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ninja Chakra Battle</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ninja Arena Battle</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div id="menu">
+    <h1>NINJA ARENA BATTLE</h1>
 
-    <h1>⚡ NINJA CHAKRA BATTLE ⚡</h1>
+    <canvas id="game"
+            width="1100"
+            height="650">
+    </canvas>
 
-    <h2>PLAYER 1</h2>
-    <div id="p1Select" class="characters"></div>
-
-    <h2>PLAYER 2</h2>
-    <div id="p2Select" class="characters"></div>
-
-    <h2>SELECT ARENA</h2>
-
-    <div id="arenaSelect">
-        <button onclick="selectArena('hill')">🪨 Hill</button>
-        <button onclick="selectArena('grass')">🌱 Grass</button>
-        <button onclick="selectArena('forest')">🌲 Forest</button>
-        <button onclick="selectArena('water')">🌊 Water</button>
-    </div>
-
-    <p id="selectedInfo">
-        Player 1 and Player 2 choose characters.
-    </p>
-
-    <button id="startButton" onclick="startGame()">
-        ⚔ START BATTLE
-    </button>
-
-</div>
-
-
-<div id="gameScreen">
-
-    <div class="top">
-
-        <div class="playerUI blueUI">
-            <b id="p1Name">PLAYER 1</b>
-
-            <div class="bar">
-                <div id="p1HP" class="hp"></div>
-            </div>
-
-            <div class="bar chakraBar">
-                <div id="p1Chakra" class="chakra"></div>
-            </div>
-
-            <span id="p1Stats"></span>
-        </div>
-
-
-        <div id="timer">99</div>
-
-
-        <div class="playerUI redUI">
-            <b id="p2Name">PLAYER 2</b>
-
-            <div class="bar">
-                <div id="p2HP" class="hp"></div>
-            </div>
-
-            <div class="bar chakraBar">
-                <div id="p2Chakra" class="chakra"></div>
-            </div>
-
-            <span id="p2Stats"></span>
-        </div>
-
-    </div>
-
-
-    <canvas id="game" width="1200" height="650"></canvas>
-
-
-    <div class="controls">
-
-        <div>
-            <b>🔵 PLAYER 1</b><br>
-            W A S D = Move<br>
-            F = Basic Attack<br>
-            G = Special<br>
-            H = Power<br>
-            J = Ultimate<br>
-            K = Block<br>
-            L = Rest / Chakra<br>
-            Q = Dodge
-        </div>
-
-        <div>
-            <b>🔴 PLAYER 2</b><br>
-            Arrow Keys = Move<br>
-            1 = Basic Attack<br>
-            2 = Special<br>
-            3 = Power<br>
-            4 = Ultimate<br>
-            5 = Block<br>
-            6 = Rest / Chakra<br>
-            0 = Dodge
-        </div>
-
-    </div>
-
-</div>
-
-
-<div id="winner">
-    <div id="winnerText"></div>
-    <button onclick="location.reload()">PLAY AGAIN</button>
-</div>
-
-
-<script src="characters.js"></script>
-<script src="game.js"></script>
+    <script src="characters.js"></script>
+    <script src="game.js"></script>
 
 </body>
+
 </html>

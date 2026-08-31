@@ -194,3 +194,28 @@ canvas {
     text-shadow: 0 0 20px red;
     margin-bottom: 30px;
 }
+{
+    #mobile-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#mobile-controls button {
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    #mobile-controls {
+        display: none;
+    }
+    

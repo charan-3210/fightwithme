@@ -4,30 +4,49 @@
 <head>
     <meta charset="UTF-8">
 
+    <!-- Android/mobile screen support -->
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Ninja Arena Battle</title>
+    <title>My Game</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>NINJA ARENA BATTLE</h1>
+    <h1>My Game</h1>
 
-    <canvas id="game"
-            width="1100"
-            height="650">
-    </canvas>
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas"></canvas>
 
+    <!-- Mobile Controls -->
+    <div id="mobile-controls">
+
+        <button id="left"
+                type="button"
+                aria-label="Move Left">
+            ⬅️
+        </button>
+
+        <button id="jump"
+                type="button"
+                aria-label="Jump">
+            ⬆️
+        </button>
+
+        <button id="right"
+                type="button"
+                aria-label="Move Right">
+            ➡️
+        </button>
+
+    </div>
+
+    <!-- JavaScript -->
     <script src="characters.js"></script>
     <script src="game.js"></script>
-    <div id="mobile-controls">
-    <button id="left">⬅️</button>
-    <button id="jump">⬆️</button>
-    <button id="right">➡️</button>
-    </div>
+
 </body>
 
 </html>
